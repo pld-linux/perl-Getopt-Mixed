@@ -6,7 +6,7 @@ Summary(pl):	Modu³ perla Getopt::Mixed
 Name:		perl-Getopt-Mixed
 Version:	1.008
 Release:	11
-License:	GPL
+License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	7d492669944f93809b7963f2c88865e7
