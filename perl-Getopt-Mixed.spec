@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Getopt
 %define	pnam	Mixed
-%include	/usr/lib/rpm/macros.perl
 Summary:	Getopt-Mixed perl module
 Summary(pl):	Modu³ perla Getopt-Mixed
 Name:		perl-Getopt-Mixed
 Version:	1.008
-Release:	7
-
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ Getopt-Mixed - getopt processing with both long and short options.
 Modu³ perla Getopt-Mixed.
 
 %prep
-%setup -q -n Getopt-Mixed-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
