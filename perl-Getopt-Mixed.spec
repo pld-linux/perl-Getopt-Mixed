@@ -5,12 +5,13 @@ Summary:	Getopt::Mixed perl module
 Summary(pl):	Modu³ perla Getopt::Mixed
 Name:		perl-Getopt-Mixed
 Version:	1.008
-Release:	9
+Release:	10
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildRequires:	perl >= 5.005_03-14
+Provides:	perl(Getopt::Mixed) = %version
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
