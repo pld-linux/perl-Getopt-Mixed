@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Getopt
 %define	pnam	Mixed
-Summary:	Getopt::Mixed perl module
-Summary(pl):	Modu³ perla Getopt::Mixed
+Summary:	Getopt::Mixed - getopt processing with both long and short options
+Summary(pl):	Getopt::Mixed - obs³uga d³ugich i krótkich opcji
 Name:		perl-Getopt-Mixed
 Version:	1.008
 Release:	11
@@ -17,10 +17,21 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Getopt::Mixed - getopt processing with both long and short options.
+The Getopt::Mixed Perl module is intended to be the
+"Getopt-to-end-all-Getop's".  It combines flexibility and simplicity. 
+It supports both short options (introduced by "-") and long options
+(introduced by "--"). Short options which do not take an argument can
+be grouped together. Short options which do take an argument must be
+the last option in their group, because everything following the
+option will be considered to be its argument.
 
 %description -l pl
-Modu³ perla Getopt::Mixed.
+Modu³ Perla Getopt::Mixed zosta³ pomy¶lany jako zastêpuj±cy wszystkie
+podprogramy do pobierania opcji. £±czy w sobie elastyczno¶æ i
+prostotê. Obs³uguje zarówno opcje krótkie (poprzedzone "-"), jak i
+d³ugie (poprzedzone "--"). Krótkie opcje bezargumentowe musz± byæ
+ostatnimi w swojej grupie, gdy¿ wszystko, co nastêpuje po takiej opcji
+by³oby traktowane jako jej argument.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
