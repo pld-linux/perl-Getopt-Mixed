@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Getopt
-%define	pnam	Mixed
+%define		pdir	Getopt
+%define		pnam	Mixed
 Summary:	Getopt::Mixed - getopt processing with both long and short options
 Summary(pl):	Getopt::Mixed - obs³uga d³ugich i krótkich opcji
 Name:		perl-Getopt-Mixed
