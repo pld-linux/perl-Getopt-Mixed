@@ -9,6 +9,7 @@ Release:	10
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	7d492669944f93809b7963f2c88865e7
 BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildRequires:	perl >= 5.005_03-14
 Provides:	perl(Getopt::Mixed) = %version
