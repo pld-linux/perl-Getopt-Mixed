@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Getopt
 %define	pnam	Mixed
-Summary:	Getopt-Mixed perl module
-Summary(pl):	Modu³ perla Getopt-Mixed
+Summary:	Getopt::Mixed perl module
+Summary(pl):	Modu³ perla Getopt::Mixed
 Name:		perl-Getopt-Mixed
 Version:	1.008
 Release:	8
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Getopt-Mixed - getopt processing with both long and short options.
+Getopt::Mixed - getopt processing with both long and short options.
 
 %description -l pl
-Modu³ perla Getopt-Mixed.
+Modu³ perla Getopt::Mixed.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
