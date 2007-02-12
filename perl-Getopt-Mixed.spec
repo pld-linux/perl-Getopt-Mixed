@@ -2,7 +2,7 @@
 %define		pdir	Getopt
 %define		pnam	Mixed
 Summary:	Getopt::Mixed - getopt processing with both long and short options
-Summary(pl):	Getopt::Mixed - obs³uga d³ugich i krótkich opcji
+Summary(pl.UTF-8):   Getopt::Mixed - obsÅ‚uga dÅ‚ugich i krÃ³tkich opcji
 Name:		perl-Getopt-Mixed
 Version:	1.008
 Release:	12
@@ -25,13 +25,13 @@ be grouped together. Short options which do take an argument must be
 the last option in their group, because everything following the
 option will be considered to be its argument.
 
-%description -l pl
-Modu³ Perla Getopt::Mixed zosta³ pomy¶lany jako zastêpuj±cy wszystkie
-podprogramy do pobierania opcji. £±czy w sobie elastyczno¶æ i
-prostotê. Obs³uguje zarówno opcje krótkie (poprzedzone "-"), jak i
-d³ugie (poprzedzone "--"). Krótkie opcje bezargumentowe musz± byæ
-ostatnimi w swojej grupie, gdy¿ wszystko, co nastêpuje po takiej opcji
-by³oby traktowane jako jej argument.
+%description -l pl.UTF-8
+ModuÅ‚ Perla Getopt::Mixed zostaÅ‚ pomyÅ›lany jako zastÄ™pujÄ…cy wszystkie
+podprogramy do pobierania opcji. ÅÄ…czy w sobie elastycznoÅ›Ä‡ i
+prostotÄ™. ObsÅ‚uguje zarÃ³wno opcje krÃ³tkie (poprzedzone "-"), jak i
+dÅ‚ugie (poprzedzone "--"). KrÃ³tkie opcje bezargumentowe muszÄ… byÄ‡
+ostatnimi w swojej grupie, gdyÅ¼ wszystko, co nastÄ™puje po takiej opcji
+byÅ‚oby traktowane jako jej argument.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
