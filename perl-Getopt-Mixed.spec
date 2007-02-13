@@ -2,7 +2,7 @@
 %define		pdir	Getopt
 %define		pnam	Mixed
 Summary:	Getopt::Mixed - getopt processing with both long and short options
-Summary(pl.UTF-8):   Getopt::Mixed - obsługa długich i krótkich opcji
+Summary(pl.UTF-8):	Getopt::Mixed - obsługa długich i krótkich opcji
 Name:		perl-Getopt-Mixed
 Version:	1.008
 Release:	12
