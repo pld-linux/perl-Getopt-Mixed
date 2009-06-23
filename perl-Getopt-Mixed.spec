@@ -4,12 +4,12 @@
 Summary:	Getopt::Mixed - getopt processing with both long and short options
 Summary(pl.UTF-8):	Getopt::Mixed - obsługa długich i krótkich opcji
 Name:		perl-Getopt-Mixed
-Version:	1.008
-Release:	13
+Version:	1.10
+Release:	1
 License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	7d492669944f93809b7963f2c88865e7
+# Source0-md5:	9d384322a4368b326efdf899bce5838a
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 1:5.8.0
 Provides:	perl(Getopt::Mixed) = %version
