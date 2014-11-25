@@ -1,6 +1,6 @@
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Getopt
 %define		pnam	Mixed
+%include	/usr/lib/rpm/macros.perl
 Summary:	Getopt::Mixed - getopt processing with both long and short options
 Summary(pl.UTF-8):	Getopt::Mixed - obsługa długich i krótkich opcji
 Name:		perl-Getopt-Mixed
@@ -10,15 +10,16 @@ License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	9d384322a4368b326efdf899bce5838a
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/Getopt-Mixed/
 BuildRequires:	perl-devel >= 1:5.8.0
-Provides:	perl(Getopt::Mixed) = %version
+BuildRequires:	rpm-perlprov >= 4.1-13
+Provides:	perl(Getopt::Mixed) = %{version}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The Getopt::Mixed Perl module is intended to be the
-"Getopt-to-end-all-Getop's".  It combines flexibility and simplicity. 
+"Getopt-to-end-all-Getop's". It combines flexibility and simplicity.
 It supports both short options (introduced by "-") and long options
 (introduced by "--"). Short options which do not take an argument can
 be grouped together. Short options which do take an argument must be
