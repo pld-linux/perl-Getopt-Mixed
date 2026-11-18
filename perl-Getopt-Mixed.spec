@@ -1,18 +1,22 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %define		pdir	Getopt
 %define		pnam	Mixed
 Summary:	Getopt::Mixed - getopt processing with both long and short options
 Summary(pl.UTF-8):	Getopt::Mixed - obsługa długich i krótkich opcji
 Name:		perl-Getopt-Mixed
-Version:	1.10
-Release:	2
-License:	GPL v2+
+Version:	1.12
+Release:	1
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	9d384322a4368b326efdf899bce5838a
+Source0:	https://www.cpan.org/authors/id/C/CJ/CJM/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	124360ea13bb6ccebeadc3e3a7fcdd59
 URL:		http://search.cpan.org/dist/Getopt-Mixed/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-Provides:	perl(Getopt::Mixed) = %{version}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -40,6 +44,8 @@ byłoby traktowane jako jej argument.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
